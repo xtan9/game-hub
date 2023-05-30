@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import apiClient from "../services/apiClient";
 import { AxiosRequestConfig, CanceledError } from "axios";
-
-export interface Platform {
-  slug: string;
-  id: number;
-  name: string;
-  background_image: string;
-}
+import { Platform } from "./usePlatforms";
 export interface Game {
   id: number;
   name: string;
